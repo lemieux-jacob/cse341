@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+h1 {
+  font-family: "Comic Neue", sans-serif;
+}
+
 .globe {
   margin: 12px;
   width: 300px;
@@ -15,4 +19,26 @@
   background-color: lightblue;
   border: 1px solid #000;
   border-radius: 100%;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #FFF;
+  border-radius: .4em;
+  padding: 12px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #FFF;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
 }
