@@ -1,0 +1,15 @@
+.is-active-link {
+  text-decoration: underline;
+}
+
+.more {
+  display: none;
+}
+
+.is-red {
+  color: #FF0000;
+}
+
+.unlist {
+  list-style: none;
+}
