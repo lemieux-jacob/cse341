@@ -1,3 +1,10 @@
+<?php
+if (isset($_GET['jquery'])) {
+  $jquery = $_GET['jquery'] == 0 ? false : true;
+} else {
+  $jquery = true;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +22,11 @@
 </head>
 
 <body>
+  <div class="alert alert-info">
+    <div class="container">
+      <span id="info"></span>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -52,19 +64,30 @@
               <div class="col">
                 <input class="form-control" id="picker" type="color">
               </div>
+            </div>
+            <div class="row">
               <div class="col">
                 <button id="changeColor" class="btn btn-secondary btn-block">Change Color</button>
               </div>
+              <div class="col">
+                <?php if ($jquery) echo '<button id="btn2" class="btn btn-secondary btn-block">Fade In/Out</button>'; ?>
+              </div>
             </div>
             <hr>
-            <button id="btn2" class="btn btn-secondary btn-block">Fade In/Out</button>
             <button id="btn1" class="btn btn-primary btn-block">Click Me</button>
           </div>
         </div>
       </div>
     </div>
+    <?php if ($jquery) {
+      echo '<a class="btn btn-primary btn-block" href="./?jquery=0">Turn JQuery Off</a>';
+      echo '<script src="app_jq.js"></script>';
+    } else {
+      echo '<a class="btn btn-primary btn-block" href="./">Turn JQuery On</a>';
+      echo '<script src="app_js.js"></script>';
+    }
+    ?>
   </div>
-  <script src="app.js"></script>
 </body>
 
 </html>

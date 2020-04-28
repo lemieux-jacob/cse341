@@ -1,5 +1,4 @@
 .box {
-  opacity: 1;
   content: "";
   height: 100px;
   width: 100px;
@@ -8,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity .75s ease-in-out;
+  user-select: none;
 }
 
-.transparent {
-  opacity: 0;
+.selected {
+  border: 2px solid #F00;
 }
