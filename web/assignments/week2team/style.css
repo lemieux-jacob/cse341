@@ -1,0 +1,16 @@
+.box {
+  opacity: 1;
+  content: "";
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .75s ease-in-out;
+}
+
+.transparent {
+  opacity: 0;
+}
