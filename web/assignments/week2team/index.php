@@ -35,6 +35,7 @@ if (isset($_GET['jquery'])) {
             <h2>Week 2: Team Assignment</h2>
           </div>
           <div class="card-body">
+            <p>Click on a box to select it, or use the selection box down below, then use the Color Picker to change it's color.</p>
             <div id="boxes" class="d-flex flex-row justify-content-center">
               <div id="box-1" class="box m-2 p-2">
                 Box #1
