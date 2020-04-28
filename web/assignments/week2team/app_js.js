@@ -28,14 +28,6 @@ boxes.forEach(box => {
     selector.value = `#${this.id}`;
     highlightActiveBox(this);
   });
-
-  box.addEventListener('mouseover', function (e) {
-    this.classList.add('font-weight-bold');
-  });
-
-  box.addEventListener('mouseout', function (e) {
-    this.classList.remove('font-weight-bold');
-  });
 });
 
 // Change Color of Selected Box based on Selected Color

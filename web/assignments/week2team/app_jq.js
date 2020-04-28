@@ -20,21 +20,10 @@ $('*.box').click(function () {
   highlightActiveBox(this);
 });
 
-// Change Text to Bold on Hover
-$('*.box').hover(
-  // Over
-  function () {
-    $(this).addClass("font-weight-bold");
-  },
-  // Out
-  function () {
-    $(this).removeClass("font-weight-bold");
-  }
-);
-
 // Highlight Active Box when Selection Changes
-$('selector').change(function () {
-  highlightActiveBox($($('selector').val()));
+$('#selector').change(function () {
+  let id = $('#selector').val();
+  highlightActiveBox($(id));
 });
 
 // Change Color of the Selected Box based on Selected Color
