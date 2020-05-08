@@ -16,8 +16,6 @@ $countries = [
   "an" => "Antartica"
 ];
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
