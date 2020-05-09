@@ -2,7 +2,7 @@
 // Redirect w/ Optional Message
 function redirect($location, $msg = null) {
   if ($msg) $_SESSION['msg'] = $msg;
-  header('Location: ' . $location);
+  header('Location: '. __DIR__ . $location);
   exit;
 }
 

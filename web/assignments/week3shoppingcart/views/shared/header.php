@@ -31,9 +31,9 @@
     <?php endif; ?>
     <div class="p-2 text-right">
       <?php if ($action === 'confirm'): ?>
-      <a href="/?action=empty-cart">Back to Browse</a> |
+      <a href="./?action=empty-cart">Back to Browse</a> |
       <?php else: ?>
-      <a href="/">Back to Browse</a> |
+      <a href="./">Back to Browse</a> |
       <?php endif; ?>
       <a href="?action=view-cart">View Cart <span class="fas fa-shopping-cart"></span> (<?= $itemsInCart; ?>) <?php echo formatCurrency($totalCost); ?></a>
     </div>
