@@ -9,6 +9,7 @@
   <div class="card-content">
     <ul>
       <li><a href="/assignments/week2team">Week 2 - Team Assignment</a></li>
+      <li><a href="/assignments/week3shoppingcart">Week 3 - Shopping Cart</a></li>
       <li><a href="/assignments/week3team">Week 3 - Team Assignment</a></li>
     </ul>
   </div>
