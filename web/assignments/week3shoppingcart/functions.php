@@ -1,39 +1,17 @@
 <?php
-/**
- * Helper Functions
- */
-
-// Require Page from Pages Folder
-function page($name, $data = []) {
-  extract($data);
-  
-  // Check Session for Messages
-  if (isset($_SESSION['message'])) {
-    $message = $_SESSION['message'];
-    $_SESSION['message'] = null;
-  }
-
-  // Display the indicated Page/View
-  return require "pages/{$name}.php";
+// Redirect w/ Optional Message
+function redirect($location, $msg = null) {
+  if ($msg) $_SESSION['msg'] = $msg;
+  header('Location: ' . $location);
+  exit;
 }
 
-// Require Partial from Partials Folder
-function partial($name, $data = []) {
-  extract($data);
-
-  return require "shared/{$name}.php";
+function formatCurrency($amt) {
+  return '$' . number_format($amt, 2);
 }
 
-// Dump and Die (For Debugging)
+// For Debugging
 function dd($var) {
   var_dump($var);
   die();
-}
-
-function redirect($uri, $message = null) {
-  if ($message) {
-    $_SESSION['message'] = $message;
-  }
-  header('Location: ' . $uri);
-  exit;
 }
