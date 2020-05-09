@@ -2,7 +2,7 @@
 // Redirect w/ Optional Message
 function redirect($location, $msg = null) {
   if ($msg) $_SESSION['msg'] = $msg;
-  header('Location: '. __DIR__ . $location);
+  header('Location: '. $_SERVER['DOCUMENT_ROOT'] . 'assignments/week3shoppingcart' . $location);
   exit;
 }
 
