@@ -1,3 +1,4 @@
+-- Create Database (Non Essential)
 CREATE DATABASE "myBlog"
     WITH 
     OWNER = postgres
