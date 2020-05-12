@@ -1,7 +1,7 @@
 -- Team Assignment
 CREATE DATABASE gc_notes;
 
--- Connect to DB
+-- Connect to DB (Local)
 \c gc_notes
 
 -- Create Users Table
