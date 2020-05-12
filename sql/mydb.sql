@@ -12,6 +12,9 @@ CREATE DATABASE "myBlog"
 -- Username: postgres
 -- Password: Secret#01
 
+-- Connect to the Database
+\c myBlog
+
 -- CREATE USER TABLE
 CREATE TABLE public."Users"
 (
