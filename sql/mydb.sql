@@ -8,10 +8,6 @@ CREATE DATABASE "myBlog"
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
 
--- Local Credentials:
--- Username: postgres
--- Password: Secret#01
-
 -- Connect to the Database
 \c myBlog
 
